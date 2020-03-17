@@ -1,5 +1,11 @@
-const world = '🗺️';
+import App from './App'
 
-export function hello(word: string = world): string {
-	return `Hello ${world}!`;
-}
+const port = process.env.PORT || 3000
+
+App.listen(port, (err) => {
+	if(err) {
+		return console.log(err);
+	}
+
+	return console.log(`server is listening on ${port}`);
+});
