@@ -1,6 +1,6 @@
 {
   "name": "sailboat-log",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -43,5 +43,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  }
+  },
+	"engines": {
+		"node": "12.16.1",
+		"yarn": "1.22.4"
+	}
 }
