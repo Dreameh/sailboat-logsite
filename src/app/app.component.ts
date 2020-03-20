@@ -14,10 +14,6 @@ export class AppComponent {
 
 	title = 'sailboat-log';
 	constructor(private appService: AppService) {
-		// this.sailboat = this.appService.getSailboat()
-		// .subscribe((data: SailboatList) => this.sailboat = { ...data },
-		// 		  error => this.error = error);
-
 		this.appService.getSailboat().subscribe(res => { this.sailboat = res; });
 	}
 }
