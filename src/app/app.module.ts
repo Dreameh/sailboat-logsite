@@ -3,15 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { WindHeadingComponent } from './wind-heading/wind-heading.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WindHeadingComponent
   ],
   imports: [
     BrowserModule,
-	HttpClientModule,
+	  HttpClientModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
