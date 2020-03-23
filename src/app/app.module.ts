@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { WindComponent } from './wind/wind.component';
+// import { WindComponent } from './wind/wind.component';
 
 
 @NgModule({
