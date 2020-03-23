@@ -7,6 +7,7 @@ import { SailboatList} from './model';
 @Injectable({
 	providedIn: 'root',
 })
+
 export class AppService {
 	constructor(private http: HttpClient) { }
 	sailboatUrl = 'assets/testJson.json';

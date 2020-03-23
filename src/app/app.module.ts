@@ -5,15 +5,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { WindHeadingComponent } from './wind-heading/wind-heading.component';
-import { WeatherComponent } from './weather/weather.component';
+import { WindComponent } from './wind/wind.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WindHeadingComponent,
-    WeatherComponent
+    WindComponent
   ],
   imports: [
     BrowserModule,
