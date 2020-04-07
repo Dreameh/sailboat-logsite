@@ -1,7 +1,5 @@
 import { Component, Injector } from '@angular/core';
-import testJson from './_files/testJson.json';
-import { AppService } from './app.service';
-import { SailboatList } from './model';
+
 
 @Component({
 	selector: 'app-root',
@@ -10,10 +8,5 @@ import { SailboatList } from './model';
 })
 
 export class AppComponent {
-	sailboat: SailboatList;
-
-	title = 'sailboat-log';
-	constructor(private appService: AppService) {
-		this.appService.getSailboat().subscribe(res => { this.sailboat = res; });
-	}
+  constructor() {}
 }

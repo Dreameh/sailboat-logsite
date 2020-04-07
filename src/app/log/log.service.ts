@@ -2,13 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
 import { HttpClient, HttpResponse, HttpErrorResponse } from '@angular/common/http';
-import { SailboatList} from './model';
+import { SailboatList } from '../model';
 
 @Injectable({
 	providedIn: 'root',
 })
 
-export class AppService {
+export class LogService {
 	constructor(private http: HttpClient) { }
 	sailboatUrl = 'assets/testJson.json';
 
