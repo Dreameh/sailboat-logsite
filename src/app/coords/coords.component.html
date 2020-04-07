@@ -1,11 +1,31 @@
+<section class="hero is-info">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Coordinates
+      </h1>
+      <h2 class="subtitle">
+        Insert new coordinates
+      </h2>
+    </div>
+  </div>
+</section>
+
 <form [formGroup]="coordForm">
-  <label>
-    Latitude:
-    <input type="text" formControlName="latitude">
-  </label>
-  <label>
-    Longitude:
-    <input type="text" formControlName="longitude">
-  </label>
-  <input type="submit" value="Submit">
+  <div class="field">
+    <label class="label">Latitude</label>
+    <div class="control">
+      <input class="input is-normal" type="text" formControlName="latitude">
+    </div>
+  </div>
+
+  <div class="field">
+    <label class="label">Longitude</label>
+    <div class="control">
+      <input class="input is-normal" type="text" formControlName="longitude">
+    </div>
+  </div>
+  <div class="control">
+    <button class="button is-primary">Submit</button>
+  </div>
 </form>
