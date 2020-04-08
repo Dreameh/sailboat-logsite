@@ -10,6 +10,8 @@ import { CoordsComponent } from './coords/coords.component';
 import { LogComponent } from './log/log.component';
 import { CoordsService } from './coords/coords.service';
 import { LogService } from './log/log.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
@@ -22,6 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     CoordsComponent,
     LogComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     RouterModule.forRoot(
