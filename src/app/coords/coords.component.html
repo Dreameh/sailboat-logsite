@@ -10,22 +10,25 @@
     </div>
   </div>
 </section>
+<section class="section">
+  <div class="container">
+    <form [formGroup]="coordForm" (ngSubmit)="onSubmit()">
+      <div class="field">
+        <label class="label">Latitude</label>
+        <div class="control">
+          <input class="input is-rounded" type="text" formControlName="latitude">
+        </div>
+      </div>
 
-<form [formGroup]="coordForm">
-  <div class="field">
-    <label class="label">Latitude</label>
-    <div class="control">
-      <input class="input is-normal" type="text" formControlName="latitude">
-    </div>
+      <div class="field">
+        <label class="label">Longitude</label>
+        <div class="control">
+          <input class="input is-rounded" type="text" formControlName="longitude">
+        </div>
+      </div>
+      <div class="control">
+        <button type="submit" class="button is-primary">Submit</button>
+      </div>
+    </form>
   </div>
-
-  <div class="field">
-    <label class="label">Longitude</label>
-    <div class="control">
-      <input class="input is-normal" type="text" formControlName="longitude">
-    </div>
-  </div>
-  <div class="control">
-    <button class="button is-primary">Submit</button>
-  </div>
-</form>
+</section>

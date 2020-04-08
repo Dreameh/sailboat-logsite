@@ -4,28 +4,22 @@
       <img src="assets/logo.svg" style=" height: auto; width: 70px;" />
     </a>
     <h3 class="navbar-item has-text-weight-medium is-size-4"> SS Agneta Log </h3>
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
   </div>
-  <div class="navbar-end">
-    <div class="navbar-item">
-      <div class="buttons">
-        <a class="button is-primary" href="/coords">
-          <strong> Coords </strong>
-        </a>
-        <a class="button is-light" href="/log">
-          Log
-        </a>
-      </div>
+  <div class="navbar-menu is-active">
+    <div class="navbar-end">
+      <a class="navbar-item" href="/coords">
+        Coords
+      </a>
+      <a class="navbar-item" href="/log">
+        Log
+      </a>
     </div>
   </div>
 </nav>
 
 <div class="content" role="main">
-  <router-outlet></router-outlet>
+  <router-outlet>
+  </router-outlet>
 </div>
 
 <footer class="footer">
