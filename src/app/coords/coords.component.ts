@@ -11,8 +11,9 @@ import { Coords } from './Coords';
 
 export class CoordsComponent {
   private coord: Coords;
-  constructor(private coordsService: CoordsService) {}
 
+    constructor( private coordsService: CoordsService) {
+    }
   coordForm = new FormGroup({
     latitude: new FormControl(''),
     longitude: new FormControl('')});
@@ -22,4 +23,5 @@ export class CoordsComponent {
     console.warn(this.coord);
     this.coordsService.addCoords(this.coord);
   }
+
 }

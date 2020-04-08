@@ -8,6 +8,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { CoordsComponent } from './coords/coords.component';
 import { LogComponent } from './log/log.component';
+import { CoordsService } from './coords/coords.service';
+import { LogService } from './log/log.service';
 
 
 const appRoutes: Routes = [
@@ -31,7 +33,7 @@ const appRoutes: Routes = [
     ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ CoordsService, LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

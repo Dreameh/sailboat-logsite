@@ -11,7 +11,7 @@ export class LogComponent {
   	sailboat: SailboatList;
 
 	title = 'sailboat-log';
-	constructor(private appService: LogService) {
-		this.appService.getSailboat().subscribe(res => { this.sailboat = res; });
+	constructor(private logService: LogService) {
+		this.logService.getSailboat().subscribe(res => { this.sailboat = res; });
 	}
 }
