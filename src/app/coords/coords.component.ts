@@ -11,17 +11,15 @@ import { Coords } from './Coords';
 
 export class CoordsComponent {
   private coord: Coords;
-  constructor() {}
+  constructor(private coordsService: CoordsService) {}
 
   coordForm = new FormGroup({
     latitude: new FormControl(''),
     longitude: new FormControl('')});
 
-  // this.coordsService.addCoords(coord)
-  // .subscribe(cord => this.heroes.push(cord));
-
   onSubmit() {
     this.coord = this.coordForm.value;
     console.warn(this.coord);
+    this.coordsService.addCoords(this.coord);
   }
 }
