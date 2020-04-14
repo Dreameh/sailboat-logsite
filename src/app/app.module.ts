@@ -10,7 +10,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { LogComponent } from './components/log/log.component';
 import { CoordinatesComponent } from './components/coordinates/coordinates.component';
-import { CoordinatesService } from './components/coordinates/coordinates.service';
 import { LogService } from './components/log/log.service';
 
 @NgModule({
@@ -28,7 +27,7 @@ import { LogService } from './components/log/log.service';
     HttpClientModule,
     ReactiveFormsModule,
   ],
-  providers: [ CoordinatesService, LogService ],
+  providers: [ LogService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
