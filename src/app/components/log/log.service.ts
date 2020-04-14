@@ -9,28 +9,28 @@ import { SailboatList } from './logModel';
 })
 
 export class LogService {
-    constructor(private http: HttpClient) { }
-    sailboatUrl = '';
+  constructor(private http: HttpClient) { }
+  sailboatUrl = 'http://localhost:8008/';
 
-    getSailboat(): Observable<SailboatList> {
-	return this.http.get<SailboatList>(this.sailboatUrl)
-	    .pipe(retry(3),
-		  catchError(this.handleError));
-    }
+  getSailboat(): Observable<SailboatList> {
+	  return this.http.get<SailboatList>(this.sailboatUrl)
+	    .pipe(retry(0),
+		        catchError(this.handleError));
+  }
 
-    getSailboatResponse(): Observable<HttpResponse<SailboatList>> {
-	return this.http.get<SailboatList>(
+  getSailboatResponse(): Observable<HttpResponse<SailboatList>> {
+	  return this.http.get<SailboatList>(
 	    this.sailboatUrl, { observe: 'response' });
-    }
+  }
 
-    private handleError(error: HttpErrorResponse) {
-	if(error.error instanceof ErrorEvent) {
+  private handleError(error: HttpErrorResponse) {
+	  if(error.error instanceof ErrorEvent) {
 	    console.error('An error occurred: ', error.error.message);
-	} else {
+	  } else {
 	    console.error(
-		`Backend returned code ${error.status}, ` +
-		    `body was: ${error.error}`);
-	}
-	return throwError('Something bad happened; please try again later.');
-    }
+		    `Backend returned code ${error.status}, ` +
+		      `body was: ${error.error}`);
+	  }
+	  return throwError('Something bad happened; please try again later.');
+  }
 }

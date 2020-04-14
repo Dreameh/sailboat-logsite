@@ -13,8 +13,9 @@
 
 <section class="section">
   <div class="container">
-    <pre>Current Position: {{sailboat.position.current_pos}}</pre>
-    <pre>Destination Position: {{sailboat.position.destination_pos}}</pre>
-    <pre>Heading: {{sailboat.position.heading}}</pre>
+    <pre>Current Position: {{sailboat.at_lat}}, {{sailboat.at_long}}</pre>
+    <pre>Destination Position: {{sailboat.dest_lat}}, {{sailboat.dest_long}}</pre>
+    <pre>Message: {{sailboat.message}}</pre>
+    <pre>Time: {{ sailboat.time }}</pre>
   </div>
 </section>

@@ -9,9 +9,9 @@ import { SailboatList } from './logModel';
   ]
 })
 export class LogComponent {
-    sailboat: SailboatList;
+  sailboat: SailboatList;
 
-    constructor(private logService: LogService) {
-	this.logService.getSailboat().subscribe(res => { this.sailboat = res; });
-    }
+  constructor(private logService: LogService) {
+	  this.logService.getSailboat().subscribe(res => { this.sailboat = res; });
+  }
 }
