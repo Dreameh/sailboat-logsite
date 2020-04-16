@@ -1,0 +1,24 @@
+<section class="hero is-danger">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Sailboat control
+      </h1>
+      <h2 class="subtitle">
+        Simple tasks for the sailboat
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <form [formGroup]="controlForm" (ngSubmit)="onYeet()">
+      <div class="field">
+        <p> Are you sure you want to delete the list of coordinates? </p>
+      </div>
+      <div class="control">
+        <button type="submit" class="button is-danger"> Empty List </button>
+      </div>
+    </form>
+  </div>
+</section>

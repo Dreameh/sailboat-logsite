@@ -29,6 +29,5 @@ export class CoordinatesComponent {
       next: data => console.log(data),
       error: error => console.error('There was an error!', error)
     });
-
   }
 }

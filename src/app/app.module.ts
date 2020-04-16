@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LogComponent } from './components/log/log.component';
 import { CoordinatesComponent } from './components/coordinates/coordinates.component';
 import { LogService } from './components/log/log.service';
+import { ControlComponent } from './components/control/control.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LogService } from './components/log/log.service';
     FooterComponent,
     HomeComponent,
     LogComponent,
-    CoordinatesComponent
+    CoordinatesComponent,
+    ControlComponent
   ],
   imports: [
     BrowserModule,
