@@ -14,7 +14,6 @@ export class LogComponent implements OnInit{
   sailboat: SailboatList;
 
   constructor(private logService: LogService) {
-	  // this.logService.getSailboat().subscribe(res => { this.sailboat = res; });
   }
 
   ngOnInit() {
